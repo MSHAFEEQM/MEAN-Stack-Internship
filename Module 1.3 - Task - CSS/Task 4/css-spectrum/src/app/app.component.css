@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap');
+
+.name{
+    text-align: center;
+    margin: 1rem;
+    font-family: "Fugaz One", sans-serif;
+    font-weight: bold;
+    color: white;
+    
+}
+.row div{
+    
+    width: 120px;
+    height: 170px;
+}
+.row{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 2rem;
+}
+.tile1{background-color: #56576C;}
+.tile2{background-color: #468771;}
+.tile3{background-color: #16D17A;}
+.tile4{background-color: #05FE48;}
+.tile5{background-color: #E5E5E5;}
+
+.tile6{background-color: #FFA608;}
+.tile7{background-color: #FE524E;}
+.tile8{background-color: #D28DAC;}
+.tile9{background-color: #8067FF;}
+.tile10{background-color: #5206FC;}
+.tile11{background-color: #8665FC;}
+.tile12{background-color: #887C92;}
+
+.tile13{background-color: #4AF7FD;}
+.tile14{background-color: #D0FEA4;}
+.tile15{background-color: #FFC15A;}
+.tile16{background-color: #E60B65;}
+.tile17{background-color: #461027;}
+.tile18{background-color: #0CFFF4;}
+.tile19{background-color: #4CC4A9;}
+.tile20{background-color: #5D5EAE;}
+.tile21{background-color: #572C73;}
+

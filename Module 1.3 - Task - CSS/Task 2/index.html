@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS tags</title>
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Internal CSS  -->
+    <style>
+        /* Class Selectors */
+        .slide img {
+            width: 18%;
+            border-radius: 25px;
+        }
+
+        .grids {
+            display: flex;
+            justify-content: space-around;
+        }
+    </style>
+</head>
+
+<!-- Inline CSS -->
+
+<body style="background-color: azure; margin: 0; font-family: sans-serif;">
+    <h2 style="text-align: center; font-size: 2rem; color: rgb(1, 88, 20);">Nature Frame</h2>
+    <p style="padding: 25px; text-align: center;">Nature Frame is a photo sharing portal. Users can upload and share
+        images beautiful scenery of their native places. In every day an image will be selected as <b>Picture of
+            Day.</b></p>
+    <center>
+        <div>
+            <p style="font-weight: 800;font-size: 1.2rem;"><b>Picture of the Day</b></p>
+            <img src="./img/gebirgslandschaft.webp" alt="Picture of the day"
+                style="border-radius: 10px; border: 1px solid green; box-shadow: 8px 8px 2px 1px rgba(0, 0, 255, .2);">
+        </div>
+    </center>
+    <div class="slide" style="padding: 25px; background-color: rgb(175, 236, 178); margin: 20px; border-radius: 15px;">
+        <p>Gallery</p>
+        <div class="grids">
+            <img src="./img/beautiful-green-field-scenery-free-image.webp" alt="">
+            <img src="./img/forest-sunlight.webp" alt="">
+            <img src="./img/old-wood-background.webp" alt="">
+            <img src="./img/reflections-on-a-lake.webp" alt="">
+            <img src="./img/weeds-on-a-lake-shore.webp" alt="">
+        </div>
+    </div>
+
+    <!-- For below tags Styling is coming from external CSS -->
+
+    <div style="padding: 1rem;">
+        <p>User Profiles</p>
+        <div class="card-grid">
+            <div class="card">
+                <img src="./img/360_F_829877904_fE0jDjN8Tt7KNkt3JTEtZ7lf4ZjKsJC1.webp" alt="">
+                <p>Sara</p>
+                <button>View My Gallery</button>
+            </div>
+            <div class="card">
+                <img src="./img/3d-avatar-cartoon-character_113255-93283.webp" alt="">
+                <p>Tommy</p>
+                <button>View My Gallery</button>
+            </div>
+            <div class="card">
+                <img src="./img/3d-render-avatar-character_23-2150611771.webp" alt="">
+                <p>Rajesh</p>
+                <button>View My Gallery</button>
+            </div>
+            <div class="card">
+                <img src="./img/3d-rendering-avatar_23-2150833554.webp" alt="">
+                <p>Safar</p>
+                <button>View My Gallery</button>
+            </div>
+            <div class="card">
+                <img src="./img/avatar-resourcing-company_1254967-6653.webp" alt="">
+                <p>Musthafa</p>
+                <button>View My Gallery</button>
+            </div>
+        </div>
+    </div>
+    </div>
+    <!-- Footer  -->
+    <div>
+        <p style="text-align: center;">Copy right reserved @ Nature Frame 2024</p>
+    </div>
+</body>
+
+</html>
