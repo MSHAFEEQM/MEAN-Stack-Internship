@@ -1,0 +1,22 @@
+<h2>User names of accounts created</h2>
+
+<table>
+  <tr class="thead">
+    <th>Serial No</th>
+    <th>User Name</th>
+  </tr>
+
+  <!-- TASK 2 start here -->
+  <tr *ngFor="let userName of userNames, let i = index ">
+   <!-- TASK 2 ends here -->
+
+    <!-- TASK 3 start here --> 
+    <ng-container *ngIf="userName != 'Ashok'">
+      <!-- TASK 3 ends here -->
+
+      <td>{{ i }}</td>
+      <td>{{ userName }}</td>
+    </ng-container>
+  </tr>
+</table>
+
