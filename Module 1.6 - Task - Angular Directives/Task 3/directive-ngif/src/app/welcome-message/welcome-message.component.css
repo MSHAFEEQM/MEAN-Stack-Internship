@@ -1,0 +1,10 @@
+*{
+    font-family: sans-serif;
+}
+div{
+    background-color: rgb(94, 238, 114);
+    width: fit-content;
+    border-radius: 20px;
+    padding: 2rem;
+    margin-top: 1rem;
+}

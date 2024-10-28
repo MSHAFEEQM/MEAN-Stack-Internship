@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    font-family: sans-serif;
+}
+div{
+    background-color: rgb(120, 120, 139);
+    padding: 1.2rem 0;
+}
+ul{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+li{
+    list-style-type: none;
+    color: azure ;
+    font-weight: 600;
+    padding: 1rem;
+}
+a{
+    color: azure ;
+}
+li:hover{
+    cursor: pointer;
+    background-color: rgb(100, 100, 114);
+    font-weight: 700;
+    
+
+}

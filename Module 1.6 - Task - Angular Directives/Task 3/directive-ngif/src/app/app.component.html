@@ -1,0 +1,5 @@
+<h2>
+  Click the button to {{ action }} welcome message
+</h2>
+<button (click)="toggleMessage()">{{ action }}</button>
+<app-welcome-message *ngIf="show"></app-welcome-message>

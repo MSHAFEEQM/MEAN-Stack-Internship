@@ -1,0 +1,36 @@
+
+*{
+    font-family: sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+}
+.login-container {
+    border: 1px solid #ccc;
+    padding: 20px;
+    width: fit-content;
+    margin: 0 auto;
+}
+
+h2 {
+    text-align: center;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+#username, #password {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
