@@ -1,0 +1,51 @@
+.main-form{
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    background-color: rgb(195, 210, 238);
+    margin: 1rem;
+    border-radius: 10px;
+}
+h2{
+    text-align: center;
+}
+label{
+    color: blueviolet;
+    font-weight: 800;
+    margin: 5px 0;
+}
+input{
+    height: 35px;
+    width: 300px;
+    border-radius: 10px;
+    border: none;
+    padding-left: 1rem;
+    font-size: 16px;
+    font-weight: 700;
+    
+}
+input:focus{
+    outline: none;
+    background-color: rgb(226, 229, 235);
+}
+
+button{
+    margin : 15px 0;
+    width: 50%;
+    height: fit-content;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 600;
+    background-color: blueviolet;
+    padding: 1rem;
+    border: none;
+    border-radius: 10px;
+
+}
+button:hover{
+    cursor: pointer;
+}
+p{
+    color: green;
+}

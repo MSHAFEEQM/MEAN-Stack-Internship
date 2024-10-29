@@ -1,0 +1,12 @@
+
+<div class="main-form">
+    <h2>Register Now</h2>
+    <label for="name">Name</label>
+    <input type="text" [(ngModel)]="name">
+    <label for="email">Email</label>
+    <input type="email" [(ngModel)]="emailId">
+    <label for="password">Password</label>
+    <input type="password" [(ngModel)]="password">
+    <button (click)="sendData()">Submit</button>
+    <p *ngIf="status == 'ok'">Registration Successful!</p>
+</div>

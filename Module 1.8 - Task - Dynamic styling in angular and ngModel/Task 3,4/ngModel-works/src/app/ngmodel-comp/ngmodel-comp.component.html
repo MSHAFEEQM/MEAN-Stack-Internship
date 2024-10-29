@@ -1,0 +1,13 @@
+<!-- Task 3  -->
+ 
+<div>
+    <h2>
+        Enter your name : <input type="text" [(ngModel)]="name">
+    </h2>
+    <div class="congr">
+        <h3 *ngIf="name">Congratulations! <span>{{ name.toUpperCase() }}</span></h3>
+    </div>
+</div>
+
+
+
