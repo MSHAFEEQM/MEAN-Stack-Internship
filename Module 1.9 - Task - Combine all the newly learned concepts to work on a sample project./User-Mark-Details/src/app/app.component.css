@@ -131,7 +131,7 @@ button:active{
     text-align: center;
     border: 1px solid var(--active-color);
     font-size: 1.1rem;
-    padding: 0.5rem;
+    padding: 0.4rem;
 }
 .list-table img:hover{
     transform: scale(1.2);
@@ -150,4 +150,8 @@ span{
     color:var(--active-color);
     font-size: 1.3rem;
     text-shadow: 0 0 16px var(--active-color);
+}
+
+.even{
+    background-color: #799270;
 }

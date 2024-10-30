@@ -62,7 +62,7 @@
             <th>Passed</th>
             <th>Action</th>
           </tr>
-          <tr *ngFor=" let name of names ,let i = index ">
+          <tr *ngFor=" let name of names ,let i = index " [ngClass]="{ 'even': i%2 == 0 }">
             <td>{{ i+1 }}</td>
             <td>{{ name }}</td>
 

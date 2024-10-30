@@ -11,8 +11,8 @@ import { RouterOutlet } from '@angular/router';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  selectTab1: boolean = false;
-  selectTab2: boolean = true;
+  selectTab1: boolean = true;
+  selectTab2: boolean = false;
 
   name: string = '';
   mark: string = '';
