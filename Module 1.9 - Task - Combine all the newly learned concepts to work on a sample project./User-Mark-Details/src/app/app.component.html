@@ -1,0 +1,85 @@
+<div class="main-section">
+  <div class="content">
+    <div class="tab-space">
+      <div class="tab" (click)="getSelectedTab1()" [ngClass]="{'selected ' : selectTab1 }">Add User</div>
+      <div class="tab" (click)="getSelectedTab2()" [ngClass]="{'selected ' : selectTab2 }">List User</div>
+    </div>
+    <div class="content-area">
+
+      <!-- Tab 1 layout  starts -->
+
+      <div class="tab1-area" *ngIf= "selectTab1">
+        <table>
+          <tr>
+            <td><p>Name</p></td>
+            <td><input type="text" [(ngModel)]="name"></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td class="error-line"><p class="error-text" [ngClass]="{'error-on' : errName}">{{ errNameMessage }}</p></td>
+          </tr>
+          <tr>
+            <td><p>Mark</p></td>
+            <td><input type="number" [(ngModel)]="mark"></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td class="error-line"><p class="error-text" [ngClass]="{'error-on' : errMark}">Mark Should be in range of ( 0 - 50 ) </p></td>
+          </tr>
+          <tr>
+            <td><p>Place</p></td>
+            <td><input type="text" [(ngModel)]="place"></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td class="button-area">
+              <button (click)="setClearFields()">Clear</button>
+              <button (click)="addUser()">Submit</button>
+            </td>
+          </tr>
+          <tr>
+            <td></td>
+            <td class="error-line"><p class="success" [ngClass]="{'error-on' : success}">Data Added Successfully..! </p></td>
+          </tr>
+        </table>
+      </div>
+
+<!-- Tab 1 layout ends -->
+
+<!-- Tab 2 layout starts.. -->
+
+      <div class="tab2-area" *ngIf= "selectTab2">
+        <div class="summary">
+          <h3>Total Students : {{ names.length }}</h3>
+          <h3>Average Mark : <span>{{ avarageMark }}</span></h3>
+        </div>
+        <table class="list-table">
+          <tr class="head-row">
+            <th>Sl No</th>
+            <th>Name</th>
+            <th>Place</th>
+            <th>Mark</th>
+            <th>Passed</th>
+            <th>Action</th>
+          </tr>
+          <tr *ngFor=" let name of names ,let i = index ">
+            <td>{{ i+1 }}</td>
+            <td>{{ name }}</td>
+
+            <!-- Task 4 -->
+            <td>{{ places[i] }}</td>
+            <!-- Task 4 -->
+             
+            <td [ngClass]="{'failed': marks[i]<20, 'top' : marks[i]>45 }">{{ marks[i] }}</td>
+
+            <!-- Task 3 -->
+            <td>{{marks[i]<20? 'No' : 'Yes' }}</td>
+            <!-- Task 3 -->
+
+            <td><img src="trash-can-solid.svg" width="20px" (click)="deleteRow(i)"></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
