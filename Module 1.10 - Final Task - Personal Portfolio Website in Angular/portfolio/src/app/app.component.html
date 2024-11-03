@@ -1,15 +1,245 @@
+<header [ngClass]="{'shadow' : !!scrolled }">
+    <div class="logo">
+        <img src="logo.jpeg" alt="logo--image">
+        <h3>MSMC</h3>
+    </div>
+    <nav>
+        <ul class="menu">
+            <li class="menu-item"><a href="#">HOME</a></li>
+            <li class="menu-item"><a href="#services">SERVICES</a></li>
+            <li class="menu-item"><a href="#projects">PROJECTS</a></li>
+            <li class="menu-item"><a href="#skills">SKILLS</a></li>
+            <li class="menu-item"><a href="#about">ABOUT</a></li>
+            <li class="menu-item"><a href="#contact">CONTACT</a></li>
+        </ul>
+    </nav>
+</header>
 <main class="main-bg">
-    <header>
-        <div class="logo"></div>
-        <nav>
-            <ul class="menu">
-                <li class="menu-item">HOME</li>
-                <li class="menu-item">SERVICES</li>
-                <li class="menu-item">PROJECTS</li>
-                <li class="menu-item">SKILLS</li>
-                <li class="menu-item">ABOUT</li>
-                <li class="menu-item">CONTACT</li>
-            </ul>
-        </nav>
-    </header>
+    <section class="cover-page" id="home">
+        <div class="left-part">
+            <h2>I AM <span class="first-name">MOHAMMED</span></h2>
+            <h2 class="last-name">SHAFEEQ M</h2>
+            <h4 class="tagline">MEAN STACK DEVELOPER</h4>
+            <p class="tag-brief">I'm a MEAN Stack developer with 1 years of experience. I specialize in building robust
+                and scalable web applications using MongoDB, Express.js, Angular, and Node.js. I'm passionate about
+                crafting clean, efficient, and user-friendly solutions, and always eager to learn and explore new
+                technologies.</p>
+            <div class="buttons-area">
+                <button>HIRE ME</button>
+                <button><a href="#contact">CONTACT ME</a></button>
+            </div>
+        </div>
+        <div class="right-part">
+            <img src="cover.jpeg" alt="">
+        </div>
+    </section>
+
+    <!-- Service section  -->
+    <section class="services" id="services">
+        <h2 class="section-heading">SERVICES</h2>
+        <div class="services-tiles">
+            <div class="service-tile" *ngFor="let data of datas">
+                <img src={{data.img}} class="anim-img">
+                <h4>{{data.name}}</h4>
+                <p class="brief">{{data.brief}}</p>
+            </div>
+        </div>
+    </section>
+    <!-- pprojects section  -->
+    <section class="projects" id="projects">
+        <h2 class="section-heading">PROJECTS</h2>
+        <div class="projects-tiles">
+            <div class="project-tile" *ngFor="let project of projects">
+                <div class="proj-img-area">
+                    <img src="{{ project.img }}" alt="" class="proj-img">
+                </div>
+                <h5>{{ project.category }}</h5>
+                <h4>{{ project.name }}</h4>
+                <p>{{ project.brief }}</p>
+                <h5>{{ project.stack }}</h5>
+                <h5 class="proj-link-area"><a href="{{ project.link }}" target="_blank">Github Repo</a></h5>
+            </div>
+        </div>
+    </section>
+    <!-- skills section  -->
+    <section class="skills" id="skills">
+        <h2 class="section-heading">SKILLS</h2>
+        <div class="skill-area">
+            <div class="skill-nav">
+                <h2 (click)="getSelected(1)" [ngClass]="{'skill-nav-selected' : skillNavSelected == 1 }">Website Design
+                </h2>
+                <h2 (click)="getSelected(2)" [ngClass]="{'skill-nav-selected' : skillNavSelected == 2 }">Web Development
+                </h2>
+                <h2 (click)="getSelected(3)" [ngClass]="{'skill-nav-selected' : skillNavSelected == 3 }">App Development
+                </h2>
+                <h2 (click)="getSelected(4)" [ngClass]="{'skill-nav-selected' : skillNavSelected == 4 }">PC App
+                    Development</h2>
+                <h2 (click)="getSelected(5)" [ngClass]="{'skill-nav-selected' : skillNavSelected == 5 }">Soft Skills
+                </h2>
+            </div>
+            <div class="skill-imgs">
+                <div *ngIf="skillNavSelected == 1">
+                    <div class="skill-tile">
+                        <i class="fa-brands fa-html5 fa-6x"></i>
+                        <p>HTML</p>
+                    </div>
+                    <div class="skill-tile">
+                        <i class="fa-brands fa-css3-alt fa-6x"></i>
+                        <p>CSS</p>
+                    </div>
+                    <div class="skill-tile">
+                        <i class="fa-brands fa-square-js fa-6x"></i>
+                        <p>JavaScript</p>
+                    </div>
+                    <div class="skill-tile">
+                        <i class="fa-brands fa-angular fa-6x"></i>
+                        <p>Angular JS</p>
+                    </div>
+                    <div class="skill-tile">
+                        <i class="fa-brands fa-react fa-6x"></i>
+                        <p>React JS</p>
+                    </div>
+                    <div class="skill-tile">
+                        <i class="fa-brands fa-bootstrap fa-6x"></i>
+                        <p>Bootstap</p>
+                    </div>
+                </div>
+                <div *ngIf="skillNavSelected == 2">
+                    <div class="skill-tile"> 
+                        <i class="fa-brands fa-node fa-6x"></i>
+                        <p>Node JS</p>
+                    </div>
+                    <div class="skill-tile">
+                        <i class="fa-brands fa-npm fa-6x"></i>
+                        <p>NPM</p>
+                    </div>
+                    <div class="skill-tile">
+                        <i class="fa-brands fa-python fa-6x"></i>
+                        <p>Python</p>
+                    </div>
+                    <div class="skill-tile"> 
+                        <i class="fa-brands fa-php fa-6x"></i>
+                        <p>PHP</p>
+                    </div>
+                    <div class="skill-tile"> 
+                        <i class="fa-solid fa-database fa-6x"></i>
+                        <p>SQL</p>
+                    </div>
+                </div>
+                <div *ngIf="skillNavSelected == 3">
+                        <div class="skill-tile"> 
+                            <i class="fa-brands fa-android fa-6x"></i>
+                            <p>Android</p>
+                        </div>
+                        <div class="skill-tile"> 
+                            <i class="fa-brands fa-flutter fa-6x"></i>
+                            <p>Flutter</p>
+                        </div>
+                        <div class="skill-tile"> 
+                            <i class="fa-brands fa-dart-lang  fa-6x"></i>
+                            <p>Dart</p>
+                        </div>
+                        <div class="skill-tile"> 
+                            <i class="fa-brands fa-swift fa-6x"></i>
+                            <p>Swift</p>
+                        </div>
+                    </div>
+                    <div *ngIf="skillNavSelected == 4">
+                        <div class="skill-tile"> 
+                            <i class="fa-solid fa-c fa-6x"></i>
+                            <p>C</p>
+                        </div>
+                        <div class="skill-tile"> 
+                            <i class="fa-brands fa-java fa-6x"></i>
+                            <p>Java</p>
+                        </div>
+                        <div class="skill-tile"> 
+                            <i class="fa-brands fa-python fa-6x"></i>
+                            <p>Python</p>
+                        </div>
+                        <div class="skill-tile">
+                            <i class="fa-brands fa-windows fa-6x"></i>
+                            <p>Windows</p>
+                        </div>
+                        <div class="skill-tile">
+                            <i class="fa-brands fa-linux fa-6x"></i>
+                            <p>Linux</p>
+                        </div>
+                    </div>
+                    <div *ngIf="skillNavSelected == 5">
+                        <div class="skill-tile"> 
+                            <i class="fa-solid fa-people-group fa-6x"></i>
+                            <p>Discussion</p>
+                        </div>
+                        <div class="skill-tile"> 
+                            <i class="fa-regular fa-comments fa-6x"></i>
+                            <p>Communication</p>
+                        </div>
+                        <div class="skill-tile"> 
+                            <i class="fa-solid fa-clipboard-check fa-6x"></i>
+                            <p>Problem Solving</p>
+                        </div>
+                    </div>
+            </div>
+        </div>    
+    </section>
+    <!-- about section  -->
+    <section class="about" id="about">
+        <h2 class="section-heading">ABOUT ME</h2>
+        <div class="about-field">
+        <div class="profile">
+            <img src="logo.jpeg" alt="">
+            <h3>Mohammed Shafeeq M</h3>
+            <div class="social-links">
+                <a href="#"><img src="fb.svg" alt=""></a>
+                <a href="#"><img src="x.svg" alt=""></a>
+                <a href="https://www.linkedin.com/in/mshafeeqmsmc/" target="_blank">
+                <img src="lkd.svg" alt=""></a>
+                <a href="https://github.com/MSHAFEEQM/" target="_blank">
+                <img src="github.svg" alt=""></a>
+            </div>
+        </div>
+        <div class="about-text">
+            <p>I'm a MEAN Stack developer with 1 years of experience. I specialize in building robust and scalable web applications using MongoDB, Express.js, Angular, and Node.js. I'm passionate about crafting clean, efficient, and user-friendly solutions, and always eager to learn and explore new technologies.I'm a strong advocate for clean code, best practices, and continuous learning. I enjoy collaborating with cross-functional teams to deliver high-quality projects on time and within budget. I'm eager to contribute my skills and knowledge to your team and help build innovative web applications that make a difference.</p>
+        </div>
+        </div>
+    </section>
+    <!-- contact section  -->
+    <section class="contact" id="contact">
+        <h2 class="section-heading">CONTACT ME</h2>
+        <div class="contact-area">
+        <div class="address">
+            <img src="cover2.jpeg" alt="">
+            <address>
+                <p>Mohammed Shafeeq M</p>
+                <p>Chappanangadi</p>
+                <p>Kottakkal</p>
+                <p>Malappuram</p>
+                <p>Pin: 676503</p>
+                <p>Phone: +919876543210</p>
+                <p>Email: mshafeeqmsmc&commat;gmail.com</p>
+            </address>
+
+        </div>
+        <div class="form">
+            <form action="#">
+                <label for="text">Your Name</label>
+                <input type="text">
+                <label for="phone">Your Phone Number</label>
+                <input type="number">
+                <label for="email">Your E-mail</label>
+                <input type="email" name="" id="">
+                <label for="subject">Subject</label>
+                <input type="text">
+                <label for="message">Your Message</label>
+                <input type="text" name="" id="message">
+                <input type="button" value="Submit">
+            </form>
+        </div>
+        </div>
+    </section>
+    <!-- footer  -->
+    <footer>
+            All Rights Reserved &copy; Copyright 2024
+    </footer>
 </main>
