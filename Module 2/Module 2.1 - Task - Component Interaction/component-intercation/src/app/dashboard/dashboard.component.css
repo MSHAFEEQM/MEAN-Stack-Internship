@@ -1,0 +1,47 @@
+.main{
+    width: 100vw;
+    height: 50vh;
+    background-color: rgb(117, 235, 235);
+    padding: 1rem;
+}
+h2{
+    text-align: center;
+    padding: 1rem;
+}
+.child-area{
+    width: 100%;
+    display: flex;
+    gap: 0.5rem;
+    justify-content: space-between;
+}
+.childs{
+    width: 50%;
+    background-color: azure;
+    padding: 1rem;
+}
+
+.rate-area{
+    display: flex;
+    width: 80%;
+    padding: 1rem;
+    justify-content: space-around;
+}
+.rate-card{
+    width: 30%;
+    display: flex;
+    padding: 1rem;
+    flex-direction: column;
+    align-items: center;
+}
+.rate-card h3{
+    font-size: 1.8rem;
+}
+.red{
+    color: red;
+}
+.yellow{
+    color: yellow;
+}
+.green{
+    color: green;
+}

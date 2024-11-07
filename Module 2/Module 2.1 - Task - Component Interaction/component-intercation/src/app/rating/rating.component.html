@@ -1,0 +1,5 @@
+<div>
+    <img src="star-solid.svg" alt="" *ngFor="let star of rateStars, let i = index" [ngClass]="{'rated' : i < rating }" (click)="changeRate(star)">
+    
+</div>
+<p>Click on stars to change rating</p>

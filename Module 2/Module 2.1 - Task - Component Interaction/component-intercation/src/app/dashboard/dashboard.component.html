@@ -1,0 +1,24 @@
+
+
+<div class="main">
+    <h2>Dashboard Component</h2>
+    <div class="child-area">
+
+        <!-- Task 1 -->
+        <app-toggle-bulb class="childs" [bulbState]="bulbInitialStatus" (stateChangeEvent)="changeState()"></app-toggle-bulb> 
+
+        <!-- Task 2 -->
+         <div class="childs rate-area">
+            <div *ngFor="let rating of userRatings,let i = index" class="rate-card">
+                <h3 *ngIf="rating < 3 " class="red">Poor</h3>
+                <h3 *ngIf="rating == 3 " class="yellow">Average</h3>
+                <h3 *ngIf="rating == 4 " class="green">Good</h3>
+                <h3 *ngIf="rating == 5 " class="green">Execellent!</h3>
+                <app-rating [rating]="rating" (rateChangeEvent)="changeRate($event,i)"></app-rating> 
+            </div>
+         </div>
+    </div>
+
+</div>
+
+

@@ -1,0 +1,14 @@
+<div>
+    <p>Toggle Bulb Component</p>
+    <div class="bulb-area">
+        <div class="bulb">
+            <img *ngIf="bulbState == 'off' " src="Bulb-Off.png" alt="">
+            <img *ngIf="bulbState == 'on' "src="Bulb-On.png" alt="" class="onbulb">
+            <div>
+
+                <input type="checkbox" (click)="stateChange()" checked>
+                <label for="">{{ bulbState }}</label>
+            </div>
+        </div>
+    </div>
+</div>
