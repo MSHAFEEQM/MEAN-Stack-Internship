@@ -1,0 +1,31 @@
+<div class="main">
+  <label for="">Select filter Criteria</label>
+  <select name="" id="" [(ngModel)] = "selectedCriteria">
+    <option value="1" >Age Less Than</option>
+    <option value="2" >Age Greater Than</option>
+    <option value="3" >Mark Less Than</option>
+    <option value="4" >Mark Greater Than</option>
+  </select>
+  <label for="" >Value</label>
+  <input type="text" [(ngModel)] = "filterValue" >
+  <button (click)="setCriteria()">Filter</button>
+</div>
+<div class="table">
+  <table>
+    <tr>
+      <th>Sl.No</th>
+      <th>Name</th>
+      <th>Age</th>
+      <th>Mark</th>
+    </tr>
+    <tr *ngFor="let user of users,let i = index" [ngClass]="{'top':user.mark > 89, 'pass': user.mark > 39 && user.mark < 90 , 'fail' : user.mark < 40}">
+        <ng-container *ngIf="(selectedCriteria == '0')||(selectedCriteria == '1' && user.age < filterValueNum)|| (selectedCriteria == '2' && user.age >= filterValueNum) || (selectedCriteria == '3' && user.mark < filterValueNum) || (selectedCriteria == '4' && user.mark >= filterValueNum)">
+        <td>{{ i+1 }}</td>
+        <td>{{ user.name }}</td>
+        <td>{{ user.age }}</td>
+        <td>{{ user.mark }}</td>
+        </ng-container>
+      </tr>
+  </table>
+  <p>Color Codes => <b>Gold :</b>  Top, <b>Green :</b> Passed, <b>Red :</b> Failed </p>
+</div> 
