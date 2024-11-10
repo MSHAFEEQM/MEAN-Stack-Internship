@@ -1,0 +1,49 @@
+<!-- Parent Component -->
+<div class="main">
+
+    <!-- Task 1 : Logger Service -->
+    <div class="sub">
+        <label for="">Enter Your Message</label>
+        <input type="text" [(ngModel)]="logMessage">
+        <button (click)="callLogger()">Log</button>
+        <p class="hint">Check Console to view message</p>
+    </div>
+
+    <!-- Task 2 : Counter -->
+    <div class="sub">
+        <p class="c-value">{{ counterValue }}</p>
+        <button (click)="incrementCounter()">Increment </button>
+        <button (click)="decrementCounter()">Decrement </button>
+        <button (click)="resetCounter()">Reset</button>
+    </div>
+
+    <!-- Task 3 : Calculator -->
+    <div class="sub">
+        <div class="calc-inputs">
+            <input type="number" [(ngModel)]="calcNum1">
+            <p>{{ symbol }}</p>
+            <input type="number" [(ngModel)]="calcNum2">
+        </div>
+        <p class="calc-ans">{{ calcAnswer }}</p>
+        <div class="arith-buttons">
+            <button (click)="add()">+</button>
+            <button (click)="sub()">-</button>
+        </div>
+        <div class="arith-buttons">
+            <button (click)="mul()">x</button>
+            <button (click)="div()">/</button>
+        </div>
+    </div>
+
+    <!-- Task 4 : Local Storage -->
+    <div class="sub">
+        <label for="">Enter Your Name</label>
+        <input type="text" [(ngModel)]="user.name">
+        <label for="">Enter Your Place</label>
+        <input type="text" [(ngModel)]="user.place">
+        <p class="stored-display">Name : {{ retrievedValue.name }}, Place : {{ retrievedValue.place }}</p>
+        <button (click)="storeData()">Save</button>
+        <button (click)="retrieveData()">Retrieve</button>
+        <button (click)="deleteData()">Remove</button>
+    </div>
+</div>
