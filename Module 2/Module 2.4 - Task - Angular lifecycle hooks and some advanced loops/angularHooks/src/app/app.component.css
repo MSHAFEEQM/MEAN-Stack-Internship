@@ -1,0 +1,12 @@
+.main{
+    padding: 3rem;
+    background-color: azure;
+    text-align: center;
+}
+.hint{
+    font-size: 0.8rem;
+    font-style: italic;
+    font-weight: 500;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}

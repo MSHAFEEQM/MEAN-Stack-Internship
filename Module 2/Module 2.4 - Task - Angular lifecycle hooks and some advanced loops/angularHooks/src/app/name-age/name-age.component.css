@@ -1,0 +1,27 @@
+div{
+    padding: 3rem;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+    background-color: bisque;
+}
+.hint{
+    font-size: 0.8rem;
+    font-style: italic;
+    font-weight: 500;
+    margin-top: 1rem;
+}
+span{
+    color: rgb(13, 118, 216);
+}
+select{
+    width: 150px;
+    padding: 0.5rem;
+    font-size: 1.1rem;
+    margin-top: 1rem;
+}
+
+.select-p{
+    font-size: 1rem !important;
+    margin-top: 2rem;
+}

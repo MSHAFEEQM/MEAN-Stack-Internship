@@ -1,0 +1,15 @@
+div{
+    padding: 3rem;
+    background-color: aliceblue;
+    width: 50%;
+    margin: 0 auto;
+}
+.hint{
+    font-size: 0.8rem;
+    font-style: italic;
+    font-weight: 500;
+    margin-top: 1rem;
+}
+h3{
+    padding: 2rem;
+}

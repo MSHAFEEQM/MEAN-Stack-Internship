@@ -1,0 +1,19 @@
+<div>
+    <p class="hint">Parent Name-Age Component</p><br>
+    <p>Hello, <span>{{name}}!</span> You are <span>{{age}}</span> years old.</p>
+    <p class="hint"> Check console to view onchanges result</p>
+
+    <p class="select-p">Select name to send to child Hello-Name Component</p>
+    <select name="" id="" [(ngModel)] = "nameToSend">
+        <option value="Ashiq">Ashiq</option>
+        <option value="Thomas">Thomas</option>
+        <option value="Lintu">Lintu</option>
+        <option value="Mariya">Mariya</option>
+    </select>
+
+    <div class="child-compo">
+
+        <app-hello-name [name]="nameToSend"></app-hello-name>
+
+    </div>
+</div>

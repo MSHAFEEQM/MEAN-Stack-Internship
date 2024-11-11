@@ -49,9 +49,9 @@ export class AppComponent {
   }
 
   //Task 3 : Calculator
-  calcNum2: number = 0;
-  calcNum1: number = 0;
-  calcAnswer: number = 0;
+  calcNum2!: number ;
+  calcNum1!: number ;
+  calcAnswer!: number;
   symbol : string = ''
 
   add(){
