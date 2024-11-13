@@ -1,0 +1,27 @@
+.main{
+    background-color: beige;
+    display: flex;
+    gap: 2rem;
+    padding: 2rem;
+}
+.tile{
+    background-color: bisque;
+    padding: 2rem;
+    flex : 1;
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+p{
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.title,span{
+    font-size: 0.8rem;
+    font-style: italic;
+    color: blueviolet;
+
+}

@@ -1,0 +1,19 @@
+<div class="main">
+  <div class="tile">
+    <p class="title">Decimal Pipe</p>
+    <p class="content"> Average of {{ num1 }} ,{{ num2 }}, {{ num3 }} </p>
+    <p> Average : {{ average | number : '1.0-2' }} <span>( With decimal pipe )</span> </p> 
+    <p> Average : {{ average }}  <span> ( Without decimal pipe )</span> </p> 
+  </div>
+  <div class="tile">
+    <p class="title">Percent pipe</p>
+    <p class="content">Percent of ( 34 / 56 ) </p>
+    <p>Percentage : {{ 34/56 | percent : '1.0-2' }} <span> ( With percent pipe ) </span></p>
+    <p>Percentage : {{ 34/56 }} <span> ( Without percent pipe )</span> </p> 
+  </div>
+  <div class="tile">
+    <p class="title">JSON pipe</p>
+    <p class="content">Object : {{ mobile | json }} <span> ( With json pipe ) </span> </p>
+    <p class="content">Object : {{ mobile }} <span> ( Without json pipe )</span> </p>
+  </div>
+</div>
