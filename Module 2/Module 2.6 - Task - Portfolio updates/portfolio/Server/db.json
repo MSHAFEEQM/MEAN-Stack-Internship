@@ -1,0 +1,200 @@
+{
+    "profile": {
+        "name": "Mohammed Shafeeq M",
+        "title": "MEAN STACK DEVELOPER",
+        "bio": "I'm a MEAN Stack developer with 1 years of experience. I specialize in building robust and scalable web applications using MongoDB, Express.js, Angular, and Node.js. I'm passionate about crafting clean, efficient, and user-friendly solutions, and always eager to learn and explore new technologies.",
+        "brief": "I'm a MEAN Stack developer with 1 years of experience. I specialize in building robust and scalable web applications using MongoDB, Express.js, Angular, and Node.js. I'm passionate about crafting clean, efficient, and user-friendly solutions, and always eager to learn and explore new technologies.I'm a strong advocate for clean code, best practices, and continuous learning. I enjoy collaborating with cross-functional teams to deliver high-quality projects on time and within budget. I'm eager to contribute my skills and knowledge to your team and help build innovative web applications that make a difference.",
+        "profileImg":"logo.jpeg",
+        "coverImg1": "cover.jpeg",
+        "coverImg2": "cover2.jpeg"  
+    },
+    "services": [
+        {
+            "id": 1,
+            "title": "Website Design",
+            "description": "From wireframing and UI/UX design to HTML, CSS, and JavaScript development. I create websites that seamlessly adapt to various screen sizes, ensuring optimal user experiences across all devices.",
+            "image": "html.gif"
+        },
+        {
+            "id": 2,
+            "title": "Web Development",
+            "description": "I specialize in creating dynamic and scalable web applications. I build robust and efficient server-side applications, handling data storage and integrate APIs to enhance website functionality and data exchange.",
+            "image": "api.gif"
+        },
+        {
+            "id": 3,
+            "title": "App Development",
+            "description": "I design intuitive and visually appealing user interfaces that enhance user engagement. My development includes high-quality mobile apps for iOS and Android using frameworks like React Native, Flutter, and Ionic.",
+            "image": "cell.gif"
+        },
+        {
+            "id": 4,
+            "title": "PC App Development",
+            "description": "I create high-performance Linux and Windows applications using C#, C++, .NET, and Visual Studio. Builds multi sectional software and integrate applications with databases like SQL Server, MySQL, and PostgreSQL.",
+            "image": "pc.gif"
+        }
+    ],
+    "projects": [
+        {
+            "id": 1,
+            "title": "Online Voting System",
+            "category":"Web Development",
+            "description": "A simple online voting system used to elect class and school leaders of a Educational Institute:",
+            "stack" : "HTML, CSS, EJS, JavaScript, NodeJS, ExpressJS, PostgreSQL",
+            "image": "vote.jpg",
+            "link": "https://github.com/MSHAFEEQM/Voting"
+        },
+        {
+            "id": 2,
+            "title": "Wheather APP",
+            "category":"Website Design",
+            "description": "A weather showing webapp created using HTML, CSS, and Javascript. API of openweather.com was used for data gathering.",
+            "stack":"HTML, CSS, JavaScript, API",
+            "image": "whether.png",
+            "link": "https://github.com/MSHAFEEQM/WeatherApp"
+        },
+        {
+            "id": 3,
+            "title": "Home Automation",
+            "category":"Web and App Development",
+            "description": "This project was developed for controlling various appliances in a home remotely by ESP8266 wifi module",
+            "stack":"HTML, CSS, JS, NodeJS, Android, IoT",
+            "image": "iot.webp",
+            "link": "https://github.com/MSHAFEEQM/Home_Auto_IOT_System"
+        },
+        {
+            "id": 4,
+            "title": "Rentome - Rent a Home",
+            "category":"Web Development",
+            "description": "A single page webapp - vendors can list thier houses for rent. It provides detils of ready to rent houses and useful for a person or family looking for a rent home ",
+            "stack":"HTML, CSS, JavaScript, ReactJS",
+            "image": "home.png",
+            "link": "https://github.com/MSHAFEEQM/Rent-home"
+        }
+    ],
+    "skills":[
+        {
+            "id":1,
+            "title":"Website Design",
+            "skills":[{
+                "title":"HTML",
+                "image":"fa-brands fa-html5"
+            },
+            {
+                "title":"CSS",
+                "image":"fa-brands fa-css3-alt"
+            },
+            {
+                "title":"JavaScript",
+                "image":"fa-brands fa-square-js"
+            },
+            {
+                "title":"Angular JS",
+                "image":"fa-brands fa-angular"
+            },
+            {
+                "title":"React JS",
+                "image":"fa-brands fa-react"
+            },
+            {
+                "title":"BootStrap",
+                "image":"fa-brands fa-bootstrap"
+            }]
+        },
+        {
+            "id":2,
+            "title":"Web Development",
+            "skills":[{
+                "title":"Node JS",
+                "image":"fa-brands fa-node"
+            },
+            {
+                "title":"NPM",
+                "image":"fa-brands fa-npm"
+            },
+            {
+                "title":"Python",
+                "image":"fa-brands fa-python"
+            },
+            {
+                "title":"PHP",
+                "image":"fa-brands fa-php"
+            },
+            {
+                "title":"SQL",
+                "image":"fa-solid fa-database"
+            }
+           ]
+        },
+        {
+            "id":3,
+            "title":"App Development",
+            "skills":[{
+                "title":"Android",
+                "image":"fa-brands fa-android"
+            },
+            {
+                "title":"Flutter",
+                "image":"fa-brands fa-flutter"
+            },
+            {
+                "title":"Dart",
+                "image":"fa-brands fa-dart-lang"
+            },
+            {
+                "title":"Swift",
+                "image":"fa-brands fa-swift"
+            }]
+        },
+        {
+            "id":4,
+            "title":"PC App Development",
+            "skills":[{
+                "title":"C",
+                "image":"fa-solid fa-c"
+            },
+            {
+                "title":"Java",
+                "image":"fa-brands fa-java"
+            },
+            {
+                "title":"Python",
+                "image":"fa-brands fa-python"
+            },
+            {
+                "title":"Windows",
+                "image":"fa-brands fa-windows"
+            },
+            {
+                "title":"Linux",
+                "image":"fa-brands fa-linux"
+            }]
+        },
+        {
+            "id":5,
+            "title":"Soft Skills",
+            "skills":[{
+                "title":"Discussion",
+                "image":"fa-solid fa-people-group"
+            },
+            {
+                "title":"Communication",
+                "image":"fa-regular fa-comments"
+            },
+            {
+                "title":"Problem Solving",
+                "image":"fa-solid fa-clipboard-check"
+            }]
+        }
+    ],
+    "contacts": {
+        "email": "mshafeeqmsmc@gmail.com",
+        "phone": "+919876543210",
+        "address": {
+            "place":"Chappanangadi",
+            "city":"Kottakkal",
+            "dist":"Malappuram",
+            "pinCode":"676503"
+        }
+    }
+}
